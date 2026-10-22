@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Registration - Bloomrix</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bloomrix Intern Registration Portal</h1>
+        <p>Welcome! Please fill out the form below to register for our upcoming technical internship program. Ensure all required fields are accurately filled before submission.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Application Form</h2>
+            <form action="#" method="get">
+
+                <!-- Fieldset 1: Personal Details -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="full-name">Full Name:</label><br>
+                        <input type="text" id="full-name" name="fullName" placeholder="Pervaiz Ahmed" autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="user-email">Email Address:</label><br>
+                        <input type="email" id="user-email" name="email" placeholder="pervaiz@example.com" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="user-phone">Phone Number:</label><br>
+                        <input type="tel" id="user-phone" name="phone" placeholder="03052641492" autocomplete="tel" required>
+                    </p>
+
+                    <p>
+                        <label for="user-password">Account Password:</label><br>
+                        <input type="password" id="user-password" name="password" placeholder="Enter secure password" autocomplete="new-password" required>
+                    </p>
+
+                    <p>
+                        <label for="birth-date">Date of Birth:</label><br>
+                        <input type="date" id="birth-date" name="dob" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Fieldset 2: Schedule & Customization -->
+                <fieldset>
+                    <legend>Schedule and Preferences</legend>
+
+                    <p>
+                        <label for="interview-time">Preferred Interview Time:</label><br>
+                        <input type="time" id="interview-time" name="interviewTime" required>
+                    </p>
+
+                    <p>
+                        <label for="training-month">Preferred Training Month:</label><br>
+                        <input type="month" id="training-month" name="trainingMonth" required>
+                    </p>
+
+                    <p>
+                        <label for="training-week">Preferred Training Week:</label><br>
+                        <input type="week" id="training-week" name="trainingWeek" required>
+                    </p>
+
+                    <p>
+                        <label for="tech-search">Search Technology Stack:</label><br>
+                        <input type="search" id="tech-search" name="techSearch" placeholder="e.g., Python, Machine Learning">
+                    </p>
+
+                    <p>
+                        <label for="theme-color">Favorite UI Color Preference:</label><br>
+                        <input type="color" id="theme-color" name="themeColor" value="#0056b3">
+                    </p>
+
+                    <p>
+                        <label for="skill-level">Python Skill Self-Rating (1 to 10):</label><br>
+                        <input type="range" id="skill-level" name="skillLevel" min="1" max="10" step="1" value="5">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Fieldset 3: Background & Submissions -->
+                <fieldset>
+                    <legend>Professional Background & Agreements</legend>
+
+                    <p>
+                        <label for="portfolio-url">Portfolio URL:</label><br>
+                        <input type="url" id="portfolio-url" name="portfolioUrl" placeholder="https://github.com/pervaiz123" autocomplete="url">
+                    </p>
+
+                    <p>
+                        <label for="resume-file">Upload Resume (PDF, DOC, DOCX):</label><br>
+                        <input type="file" id="resume-file" name="resumeFile" accept=".pdf,.doc,.docx" required>
+                    </p>
+
+                    <p>
+                        <label for="milestone-select">Select Target Milestone Track:</label><br>
+                        <select id="milestone-select" name="milestone" required>
+                            <option value="" disabled selected>-- Choose your track --</option>
+                            <optgroup label="Software Engineering">
+                                <option value="python-backend">Python & FastAPI Backend</option>
+                                <option value="fullstack">React & Next.js Frontend</option>
+                            </optgroup>
+                            <optgroup label="Data & Artificial Intelligence">
+                                <option value="ml-engineer">Machine Learning Engineering</option>
+                                <option value="rag-systems">RAG & LLM Agent Architecture</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <span>Interests (Check all that apply):</span><br>
+                        <input type="checkbox" id="interest-python" name="interests" value="Python">
+                        <label for="interest-python">Python</label><br>
+                        <input type="checkbox" id="interest-ai" name="interests" value="AI">
+                        <label for="interest-ai">Artificial Intelligence</label><br>
+                        <input type="checkbox" id="interest-db" name="interests" value="PostgreSQL">
+                        <label for="interest-db">PostgreSQL & SQLAlchemy</label>
+                    </p>
+
+                    <p>
+                        <label for="applicant-notes">Address or Additional Notes:</label><br>
+                        <textarea id="applicant-notes" name="notes" rows="4" cols="50" placeholder="Type your address or any additional comments here..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="terms-check" name="terms" required>
+                        <label for="terms-check">I agree to the Bloomrix Terms and Conditions.</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- Form Action Buttons -->
+                <p>
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Summary Table Section -->
+        <section>
+            <h2>Training Program Summary Table</h2>
+            <table border="1">
+                <caption>Overview of Bloomrix Internship Tracks and Schedules</caption>
+                <thead>
+                    <tr>
+                        <th>Track Name</th>
+                        <th>Duration</th>
+                        <th>Level</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python Backend Development</td>
+                        <td>12 Weeks</td>
+                        <td>Intermediate</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning Engineering</td>
+                        <td>12 Weeks</td>
+                        <td>Advanced</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Full-Stack Web Development</td>
+                        <td>10 Weeks</td>
+                        <td>Intermediate</td>
+                        <td>Open</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Available Specialized Tracks</td>
+                        <td>3 Tracks</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Bloomrix Technologies. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

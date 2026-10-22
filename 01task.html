@@ -1,147 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile and Contact Page</title>
 
-</head>
-
+    <title> Personal Profile & Contact Page</title>
 
 <body>
-    <!----Header Section---->
-
     <div>
         <h1>Pervaiz Ahmed</h1>
-        <p>Welcome to my personal Profile Page. I am a aspiring <strong>Software Engineer</strong> passionate about
-            building Functional and User-Friendly Applications.</p>
-        <img src="images/pervaiz_photo.jpeg" alt="Pervaiz Ahmed" width="100" height="100">
+        <p>Hi, I am Pervaiz Ahmed. I am a <strong>Software Engineer</strong> I have experience in creating
+            responsive and user-friendly websites.</p>
+        <img src="images/pervaiz_photo.jpeg" alt="Pervaiz Ahmed" width="100">
+
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>About</h2>
+            <p>I am a passionate software engineer with a strong foundation in web development. I enjoy creating innovative solutions and continuously improving my skills.</p>
+             
+            <p><em>"Learning never exhausts the mind." - Leonardo da Vinci</em></p>
+            <p><small>Status: Available for new opportunities</small></p>
+
+        
+        </div>
+
+        <hr>
+
+        <div>
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+            </ul>   
+        </div>
+
+        <hr>
+        <div>
+            <h3>Education & Creditionals</h3>
+            <ul>
+                <li>Bachelor's Degree in Information Technology</li>
+                <li>Certified Web Developer</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div>
+            <h3>Connect & Resources</h3>
+            <p>Visit my External Profiles</p>
+            <a href="https://www.linkedin.com/in/pervaiz-ahmed-" target="_blank">LinkedIn</a>
+            <a href="https://github.com/pervaiz123" target="_blank">GitHub</a>
+
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Contact</h2>
+
+            <form action="#" method="get">
+                <p>
+                    <label for="Full-Name">Full Name:</label><br>
+                    <input type="text" id="Full-Name" name="full-name" placeholder="John Doe" required> <br>
+                </p>
+
+                <p>
+
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="email" placeholder="johndoe@gmail.com" required> <br>
+                </p>
+
+                <p>
+
+                <label for="user-password">Password:</label>
+                <input type="password" id="user-password" name="password" placeholder="Enter your Password"required> <br>
+                </p>
+
+                <p>
+
+                <label for="birth_date">Birth Date:</label>
+                <input type="date" id="birth_date" name="birth_date" required><br>
+                </p>
+
+                <p>
+
+                <label for="experience">Experience:</label>
+                <select id="experience" name="experience" required>
+                    
+
+                </p>
+
+
+                <span>Gender:</span>
+                <input type="radio" id="gender-male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="gender-female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+
+                <input type="radio" id="gender-other" name="gender" value="other" required>
+                <label for="other">Other</label><br>
+
+                </p>
+                <span>Interests:</span><br>
+                <input type="checkbox" id="interest-coding" name="interest" value="coding" checked>
+                <label for="interest-coding">coding </label><br>
+
+                <input type="checkbox" id="interest-Desgning" name="interest" value="Desgning" checked>
+                <label for="interest-Desgning">Desgning </label><br>
+
+                <input type="checkbox" id="interest-Gaming" name="interest" value="Gaming" checked>
+                <label for="interest-Gaming">Gaming</label><br>
+
+                <p>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                </p>
+
+
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+
+
     </div>
-
-    <hr>
-    <!----About  Section---->
-    <div>
-        <h2>About</h2>
-        <p>I am Currently Learning Software Engineering Stack <mark>Highlighting core HTML Tags</mark> Helps to Build a
-            strong Foundation in Web Development.</p>
-        <p><em>"Learning Step by Step builds mastery over the Concepts."</em></p>
-        <p><small>Status: Available for Entry level Oppournities and Collaborations</small></p>
-    </div>
-
-    <hr>
-    <!----Skills Section---->
-    <div>
-        <h3> Technical Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>php</li>
-            <li>laravel</li>
-            <li>MySQL</li>
-        </ul>
-
-    </div>
-    <!----Education Section--->
-    <hr>
-
-    <div>
-        <h3>Education & Credentials</h3>
-        <ol>
-            <li>Bachelor in Information Technology</li>
-            <li>Software Engineer Backend Development</li>
-        </ol>
-    </div>
-
-    <!----Usefull Links Section---->
-    <hr>
-
-    <div>
-        <h3>Contact & Resources</h3>
-        <p>Visit my External Profiles:</p>
-        <a href="https://github.com/pervaiz123" target="_blank">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/pervaiz-ahmed-/" target="_blank">LinkedIn Profile</a>
-
-    </div>
-
-    <hr>
-
-    <!----Contact Form Section---->
-
-    <div>
-
-        <h2>Contact Me</h2>
-        <form action="#" method="get">
-            <p>
-                <label for="Full Name">Full Name:</label><br>
-                <input type="text" id="Full Name" name="Full Name" placeholder="John Doe" required>
-
-
-            </p>
-
-            <p>
-                <label for="Email">Email Address:</label><br>
-                <input type="email" id="user-email" name="user-email" placeholder="johndoe@gmail.com" required>
-
-            </p>
-
-            <p>
-                <label for="user-password">Password:</label><br>
-                <input type="password" id="user-password" name="user-password" placeholder="Enter password" required>
-
-            </p>
-
-            <p>
-                <label for="Date-of-birth">Date of Birth:</label><br>
-                <input type="date" id="Date-of-Birth" name="Date-of-Birth" required>
-
-            </p>
-
-
-            <p>
-                <label for="Experince-Level">Experince Level</label><br>
-                <input type="number" id="Experince_year" name="Experince" min="0" max="16" step="1" value="1">
-
-            </p>
-
-            <p>
-                <span>Gender:</span><br>
-                <input type="radio" id="gender-male" name="gender" value="male" checked>
-                <label for="gender-male">Male</label><br>
-
-                <input type="radio" id="gender-female" name="gender" value="female" checked>
-                <label for="gender-female">Female</label><br>
-
-                <input type="radio" id="gender-other" name="gender" value="other" checked>
-                <label for="gender-other">Other</label>
-            </p>
-
-            <hr>
-
-            <span>Interests:</span><br>
-            <input type="checkbox" id="Interest-coding" name="interest" value="coding" checked>
-            <label for="interest-coding">coding</label>
-
-            <input type="checkbox" id="Interest-Designing" name="interest" value="Designing" checked>
-            <label for="interest_Designing">Designing</label>
-
-            <input type="checkbox" id="Interest-Gaming" name="Interest" value="Gaming" checked>
-            <label for="interest-Gamiing">Gaming</label>
-
-            <p>
-                <label for="user-message">Your Message:</label><br>
-                <input type="text" id="text-message" name="message" placeholder="Type your message here." required>
-            
-            </p>
-
-            <p>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset </button>
-            </p>
-
 </body>
-
-</html>
+    </html>
